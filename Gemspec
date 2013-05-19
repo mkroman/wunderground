@@ -1,0 +1,17 @@
+# encoding: utf-8
+
+Gem::Specification.new do |spec|
+  spec.name    = "wunderground"
+  spec.version = "0.1"
+  spec.summary = "Ruby implementation for the Wunderground professional weather service."
+
+  spec.author  = "Mikkel Kroman"
+  spec.email   = "mk@maero.dk"
+
+  spec.files = Dir['library/**/*.rb']
+  spec.require_path = "library"
+  spec.required_ruby_version = ">= 1.9.1"
+  
+  spec.add_dependency "json"
+  spec.add_dependency "rest-client"
+end
